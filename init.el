@@ -34,7 +34,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(js2-indent-switch-body t)
- '(nodejs-repl-command "/usr/local/bin/node"))
+ '(nodejs-repl-command "/usr/local/bin/node")
+ '(org-hide-leading-stars t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -68,7 +69,8 @@
 ;; PHP
 (require 'auto-complete-etags)
 
-
-
-
-
+;; org-mode
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
