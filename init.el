@@ -34,8 +34,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(js2-indent-switch-body t)
- '(nodejs-repl-command
-   "/Users/ian.plunkett/Library/iojs-v2.3.0-darwin-x64/bin/node"))
+ '(nodejs-repl-command "/usr/local/bin/node"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
