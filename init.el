@@ -5,6 +5,7 @@
 ( setenv "PATH"
 	 (concat
 	  (getenv "HOME") "/bin" ":"
+	  (getenv "HOME") "/.npm-packages/bin" ":"
 	  "/usr/local/bin" ":"
 	  (getenv "PATH")))
 
