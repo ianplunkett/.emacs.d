@@ -94,4 +94,9 @@
                          ac-source-html-attribute)))
 
 
+;; easy creation of multiple eshell buffers
+(defun zeshell ()
+  "Create a new eshell buffer"
+  (interactive)
+  (eshell `Z))
 
