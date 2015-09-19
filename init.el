@@ -95,8 +95,13 @@
 
 
 ;; easy creation of multiple eshell buffers
-(defun mulit-eshell (z)
+(defun multi-eshell (z)
   "Create a new eshell buffer"
   (interactive "sEnter shell name: ")
   (eshell `Z)
   (rename-buffer z))
+
+
+(global-set-key (kbd "<f12>") 'multi-eshell)
+
+
