@@ -39,7 +39,19 @@
  '(org-agenda-files (quote ("~/Documents/org/gtd.org")))
  '(org-enforce-todo-checkbox-dependencies t)
  '(org-enforce-todo-dependencies t)
- '(org-hide-leading-stars t))
+ '(org-hide-leading-stars t)
+ '(org-html-head
+   "<link rel=\"stylesheet\" type=\"text/css\" href=\"./org-html-themes/setup/src/htmlize.css\"/>
+<link rel=\"stylesheet\" type=\"text/css\" href=\"./org-html-themes/setup/src/bigblow.css\"/>
+<link rel=\"stylesheet\" type=\"text/css\" href=\"./org-html-themes/setup/src/hideshow.css\"/>
+<script type=\"text/javascript\" src=\"./org-html-themes/setup/src/jquery-1.11.0.min.js\"></script>
+<script type=\"text/javascript\" src=\"./org-html-themes/setup/src/jquery-ui-1.10.2.min.js\"></script>
+<script type=\"text/javascript\" src=\"./org-html-themes/setup/src/jquery.localscroll-min.js\"></script>
+<script type=\"text/javascript\" src=\"./org-html-themes/setup/src/jquery.scrollTo-1.4.3.1-min.js\"></script>
+<script type=\"text/javascript\" src=\"./org-html-themes/setup/src/jquery.zclip.min.js\"></script>
+<script type=\"text/javascript\" src=\"./org-html-themes/setup/src/bigblow.js\"></script>
+<script type=\"text/javascript\" src=\"./org-html-themes/setup/src/hideshow.js\"></script>
+<script type=\"text/javascript\" src=\"./org-html-themes/setup/src/jquery.stickytableheaders.min.js\"></script>"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -80,9 +92,9 @@
 (global-set-key "\C-cb" 'org-iswitchb)
 
 (setq org-todo-keywords
-      '((sequence "TODO" "IN PROGRESS" "ON HOLD" "|" "DONE" "DELEGATED")))
+      '((sequence "TODO" "STARTED" "DEFERRED" "|" "DONE" "DELEGATED")))
 (setq org-todo-keyword-faces
-      '(("TODO" . org-warning) ("IN PROGRESS" . "OliveDrab4")
+      '(("TODO" . org-warning) ("STARTED" . "OliveDrab4")
 	("DONE" . (:foreground "blue" :weight bold))
 	("DELEGATED" . (:foreground "blue" :weight bold))))
 
